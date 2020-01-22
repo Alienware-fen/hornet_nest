@@ -1,0 +1,1165 @@
+.logo-fixed{
+	position: fixed;
+	left: 0px;
+	bottom: 29px;
+}
+nav{
+	width: 100%;
+	background: white;
+	border-bottom: 1px solid #d6d6d6;
+	margin: 0px auto;
+}
+.nav-warp{
+	width: 1126px;
+	height:57px;
+	margin: 0px auto;
+}
+.nav-warp h1, .nav-warp ul, .nav-warp ul li{
+	float: left;
+}
+
+/* logo样式 */
+h1::before{
+	content: "";
+	width: 135px;
+	height: 33px;
+	display: inline-block;
+	background: url('../img/A15.png') no-repeat 0px 0px;
+}
+h1{
+	padding-top: 14px;
+	margin-right: 59px;
+}
+
+/* 导航栏中间样式 */
+.nav-warp ul{
+	line-height:57px; 
+	margin: 0px auto;
+}
+.nav-warp ul::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.nav-warp ul>li{
+	font-size: 14px;
+	color: #333333;
+	margin: 0px 6px;
+	cursor: pointer;
+	height: 54px;
+	width: 57px;
+	text-align: center;
+	position: relative;
+}
+.nav-warp ul>li>a{
+	text-decoration: none;
+	color: #333333;
+}
+/* 设置当前页面的导航栏样式 */
+.nav-warp .airport{
+	background: #ff9d00;
+	color: white;
+	height: 57px;
+}
+
+.nav-warp .pic img{
+	position: relative;
+	top: 10px;
+}
+
+/* 旅游 社区 精灵图片 */
+.travel::after,.social::after{
+	content: "";
+	display: inline-block;
+	width: 12px;
+	height: 7px;
+	background: url('../img/Airport.png') no-repeat;
+	background-position: -119px -36px;
+}
+
+.nav-warp .re::after{
+	background-position: -129px -36px;
+}
+
+.travel::after{
+	position: relative;
+	bottom: 56px;
+	left: 30px;
+}
+
+/* 去旅游子菜单 */
+.travelol {
+	position: absolute;
+	top:55px;
+	left: 0px;
+	border: 1px solid #d6d6d6;
+	background: white;
+	border-top: none;
+	height: 185px;
+	display: none;
+	z-index: 6;
+}
+
+.travelol li{
+	font-size: 14px;
+	color: #333333;
+	cursor: pointer;
+	height: 35px;
+	width: 120px;
+	line-height: 35px;
+	text-align: left;
+	margin: 0px;
+	position: relative;
+	/* 定位方式是为了文字图标 */
+}
+.travelol a{
+	height: 35px;
+	width: 105px;
+	padding-left: 15px;
+	display: inline-block;
+	text-decoration: none;
+	color: #333333;
+}
+
+.nav-warp .current{
+	display: inline-block;
+}
+
+.currentol{
+	background: #efefef;
+}
+
+/* 社区子菜单 */
+.socialol {
+	position: absolute;
+	top:56px;
+	left: 0px;
+	border: 1px solid #d6d6d6;
+	background: white;
+	border-top: none;
+	display: none;
+	width: 286px;
+}
+
+.lefta{
+	width: 100px;
+	height: 55px;
+	text-align: left;
+	padding: 0 53px 0 15px;
+}
+.lefta a{
+	font-size: 18px;
+	color: #ff9d00
+}
+
+.riga{
+	width: 100px;
+	line-height: 30px;
+	font-size: 12px;
+	margin-top: 10px;
+	text-align: left;
+}
+.riga a{
+	font-size: 14px;
+}
+
+.socialol a{
+	text-decoration: none;
+	color: #333333;
+}
+.social li>.socialcola{
+	color:  #ff9d00;
+}
+
+/* 导航栏右边样式 */
+.nav-right{
+	float: right;
+	width: 360px;
+	line-height: 57px;
+}
+
+.nav-right input{
+	width: 130px;
+	height: 30px;
+	float: left;
+	outline: none;
+	background: #efefef;
+	border: none;
+	border-radius: 6px;
+	margin: 14px 0px;
+	transition: width 1s;
+	position: absolute;
+	right: 280px;
+	/* absolute 为了让动画的效果往左边拓展 所以父级没有相对定位 */
+}
+.ser{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	position: relative;
+	top: 3px;
+	right: -121px;
+	background: url('../img/Airport3.png') no-repeat;
+	background-position: -29px -109px;
+}
+.serafter{
+	background-position: -29px -140px;
+}
+
+.nav-right .warp-p{
+	line-height: 57px;
+	float: right;
+	width: 183px;
+}
+
+/* 微博 微信 QQ */
+#span_pic1,#span_pic2,#span_pic3{
+	width: 28px;
+	height: 26px;
+	display: inline-block;
+	background: url('../img/Airport3.png') no-repeat;
+	position: relative;
+	top: 7px;
+}
+
+#span_pic1{
+	background-position: 0 -50px;
+}
+#span_pic1:hover{
+	background-position: 0 -80px;
+}
+
+#span_pic2{
+	background-position: -29px -50px;
+}
+#span_pic2:hover{
+	background-position: -29px -81px;
+}
+
+#span_pic3{
+	background-position: 0 -165px;
+}
+#span_pic3:hover{
+	background-position: -29px -165px;
+}
+
+/*登陆注册 */
+.warp-p .span-pic5{
+	font-size: 14px;
+	color: #c9c9c9;
+}
+.warp-p a:nth-of-type(4),.warp-p a:nth-of-type(5){
+	font-size: 14px;
+	color: #ff9d00;
+}
+
+.warp-p a:nth-of-type(4):hover,
+.warp-p a:nth-of-type(5):hover{
+	text-decoration: underline;
+}
+
+section{
+	width: 1000px;
+	height: 944px;
+	margin: 0px auto 60px;
+}
+
+/* 飞机图标 */
+.first-pic::before{
+	background-position:  0px 0px;
+}
+h3{
+	font-size: 17px;
+	color: #666666;
+	padding: 18px 56px 18px;
+}
+h3::before{
+	content: "";
+	width: 22px;
+	height: 23px;
+	display: inline-block;
+	background: url('../img/Airport.png') no-repeat;
+	position: relative;
+	top: 6px;
+	right: 14px;
+}
+
+.sec-warp{
+	height: 349px;
+	margin-bottom: 9px;
+}
+.warp-left{
+	width: 359px;
+	height: 347px;
+	border: 2px solid #ff9d00;
+	float: left;
+	line-height: 45px;
+}
+.warp-left form{
+	height: 307px;
+	position: relative;
+	/* 出发城市子菜单定位参考 */
+}
+
+.warp-left p{
+	text-align: center;
+}
+.warp-left input{
+	width: 207px;
+	height: 10px;
+	margin:0px 10px 10px;
+	border: 1px solid #e5e5e5;
+}
+.warp-left label{
+	font-size: 14px;
+	color: #717376;
+}
+
+/* 单程 往返 */
+.warp-radio{
+	margin-left: -86px;
+}
+.warp-left .single1,
+.warp-left .single2,
+.warp-left .single3{
+	cursor: pointer;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 32px;
+    border: 1px solid #e5e5e5;
+    margin-left: 8px;
+    display: inline-block;
+}
+.warp-left .single-col{
+	display: inline-block;
+	width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 12px;
+    border: 5px solid #ff9d00;
+}
+.warp-left .single-label{
+	font-size: 15px;
+	position: relative;
+	top: -3px;
+}
+
+
+/* 中间四个输入框 */
+.warp-left .inp-1,.warp-left .inp-2,
+.warp-left .inp-3,.warp-left .inp-4{
+	font-size: 13px;
+	padding: 13px;
+	outline: none;
+}
+/* 出发城市子菜单 */
+.warp-left .gocity,.warp-left .gocity-2{
+	width: 522px;
+	padding: 10px;
+	background: white;
+	border: 1px solid #e5e5e5;
+	position: absolute;
+	left: 90px;
+	z-index: 3;
+	display: none;
+}
+.warp-left .gocity{
+	top: 87px;
+}
+.warp-left .gocity-2{
+	top: 139px;
+}
+
+.gocity li,.gocity-2 li{
+	float: left;
+	width: 70px;
+	line-height: 30px;
+	border-right: 1px solid #fff;
+	font-size: 12px;
+	color: #717376;
+	text-align: center;
+	background: #f6f6f6;
+	cursor: pointer;
+}
+
+/* 具体城市 */
+.gocity .city-hot,.gocity .city-A,
+.gocity .city-F,.gocity .city-K,
+.gocity .city-Q,.gocity .city-X,
+.gocity-2 .city-hot,.gocity-2 .city-A,
+.gocity-2 .city-F,.gocity-2 .city-K,
+.gocity-2 .city-Q,.gocity-2 .city-X{
+	width: 480px;
+	padding: 10px 13px 0px;
+	margin-top: 10px;
+	display: none;
+}
+/* 事件样式变化 */
+/* 点击四个输入框颜色变化 */
+.warp-left .bor{
+	border: 1px solid #ff9d00;
+	border-bottom: 1px solid #e5e5e5;
+}
+/* 点击具体城市显示 */
+.warp-left .dis{
+	display: block;
+}
+/* 点击具体城市table栏头部变化的颜色 */
+.gocity .col,.gocity-2 .col{
+	color: white;
+	background: #ff9d00;
+}
+
+/* table栏显示内容 */
+.gocity .city-dis,
+.gocity-2 .city-dis{
+	display: block;
+}
+
+.gocity .city-hot li,
+.gocity .city-A li,
+.gocity .city-F li,
+.gocity .city-K li,
+.gocity .city-Q li,
+.gocity .city-X li,
+.gocity-2 .city-hot li,
+.gocity-2 .city-A li,
+.gocity-2 .city-F li,
+.gocity-2 .city-K li,
+.gocity-2 .city-Q li,
+.gocity-2 .city-X li
+{
+	width: 68px;
+	height: 30px;
+	float: left;
+	background: white;
+	font-size: 14px;
+	margin-bottom: 2px;
+	text-align: left;
+}
+.gocity .city-hot li:hover,
+.gocity .city-A li:hover,
+.gocity .city-F li:hover,
+.gocity .city-K li:hover,
+.gocity .city-Q li:hover,
+.gocity .city-X li:hover,
+.gocity-2 .city-hot li:hover,
+.gocity-2 .city-A li:hover,
+.gocity-2 .city-F li:hover,
+.gocity-2 .city-K li:hover,
+.gocity-2 .city-Q li:hover,
+.gocity-2 .city-X li:hover
+{
+	color: #ff9d00;
+}
+
+.city-A span,.city-F span,
+.city-K span,.city-Q span,
+.city-X span{
+	float: left;
+	width: 15px;
+	height: 60px;
+	margin-right: 10px;
+	text-align: center;
+	position: relative;
+	top: -6px;
+	color: #ff9d00;
+	font-size: 14px;
+}
+.city-A .span-E,
+.city-F .span-F,
+.city-K .span-M,
+.city-K .span-P,
+.city-Q .span-R{
+	height: 30px;
+}
+.city-A .span-C,
+.city-F .span-H,
+.city-F .span-J,
+.city-K .span-L,
+.city-Q .span-S,
+.city-Q .span-W,
+.city-X .span-X{
+	height: 90px;
+}
+.city-X .span-Y{
+	height: 120px;
+}
+.gocity ul::after,
+.gocity-2 ul::after,
+.city-A div::after,
+.city-F div::after,
+.city-K div::after,
+.city-Q div::after,
+.city-X div::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+/* 日期图标 */
+.warp-left .span-inp3,.warp-left .span-inp4{
+	display:inline-block;
+	width: 22px;	
+	height: 18px;
+	position: absolute;
+	bottom: 125px;
+	right: 40px;
+	background: url('../img/Airport.png') no-repeat;
+	background-position:  -59px -30px;
+}
+.warp-left .span-inp3{
+	bottom: 125px;
+}
+.warp-left .span-inp4{
+	bottom: 72px;
+}
+
+
+
+/* 内容切换 */
+.warp-change{
+	width: 19px;
+	height: 52px;
+	border: 1px solid #e5e5e5;
+	border-left: none;
+	position: relative;
+	bottom: 233px;
+	left: 330px;
+}
+.warp-change .change-val{
+	width: 21px;
+	height: 21px;
+	background: #e5e5e5;
+	padding: 0px;
+	font-size: 12px;
+	position: relative;
+	top: 0px;
+	left: 5px; 
+}
+.warp-change .change-val:hover{
+	background: #ff9d00;
+}
+
+
+/* 携带儿童 */
+.warp-left .warp-child{
+	padding-right: 65px;
+}
+.warp-left .single-child{
+	font-size: 11px;
+	position: relative;
+	top: -3px
+}
+
+.warp-child .child-pic{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url('../img/A17.png');
+	background-size: 14px;
+}
+
+.txt{
+	height: 229px;
+	width: 530px;
+	background: white;
+	text-align: left;
+	border-radius: 3px;
+	position: absolute;
+	top: 285px;
+	left: 125px;
+	z-index: 4;
+	line-height: 20px;
+	padding:0px 10px 0px;
+	display: none;
+}
+.txt h6{
+	font-weight: bold;
+	text-align: center;
+	margin: 12px 0px;
+}
+.txt b{
+	text-align: left;
+	font-size: 12px;
+}
+.txt span{
+	font-size: 11px;
+	text-align: left;
+}
+
+/* 搜索框 */
+.warp-left .warp-bot{
+	margin-left:55px;
+}
+.warp-left button{
+	width: 230px;
+	height: 40px;
+	background: #ff9d00;
+	color: white;
+	font-size: 18px;
+	border: none;
+	position: relative;
+	padding-left:25px;
+	top: -63px;
+	outline: none;
+	cursor: pointer;
+}
+
+.warp-left .ser{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url('../img/A16.png') no-repeat 0px 0px;
+	background-size: 25px 25px; 
+	position: absolute;
+	left: 77px;
+	top: 8px;
+}
+
+.warp-right{
+	width: 620px;
+	float: right;
+}
+
+/* 票价图标 */
+.second-pic::before{
+	width: 30px;
+	background-position: -28px 0px;
+}
+.sec-bot{
+	height: 60px;
+	width: 1000px;
+	border: 1px solid #e5e5e5;
+	background: #f6f6f6;
+	padding-top: 12px;
+}
+
+.sec-bot b{
+	color: #ff9d00;
+	position: relative;
+	top: 18px;
+	right: 100px;
+}
+.sec-bot p{
+	float: left;
+	width: 332px;
+	height: 34px;
+	border-right: 1px solid #e5e5e5;
+	text-align: center;
+	font-size: 15px;
+}
+.sec-bot p::before{
+	content: "";
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+	display: inline-block;
+	position: relative;
+	right: 15px;
+	background: url('../img/Airport.png') no-repeat;
+}
+.sec-bot p:nth-of-type(1)::before{
+	background-position: 0px -90px;
+}
+
+.sec-bot p:nth-of-type(2)::before{
+	background-position: -59px -90px;
+}
+
+.sec-bot p:nth-of-type(3)::before{
+	vertical-align: top;
+	background-position: -118px -90px;
+}
+.sec-bot p:nth-of-type(3){
+	border: none;
+}
+
+/* 侧边栏 */
+body{
+	position: relative;
+}
+.scroll-before{
+	width: 45px;
+	border: 1px solid #e5e5e5;
+	position: fixed;
+	top: 425px;
+	right: 73px;
+}
+aside div{
+	width: 43px;
+	line-height: 43px;
+	border: 1px solid #e5e5e5;
+	text-align: center;
+	position: relative;
+	top: 0px;
+	cursor: pointer;
+}
+
+aside span{
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	position: relative;
+	top: 7px;
+	background: url('../img/Airport3.png') no-repeat;
+}
+aside .back,
+aside .backtop{
+	width: 45px;
+	height: 44px;
+	background: grey;
+	color: white;
+	font-size: 12px;
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	text-align: center;
+	line-height: 20px;
+	display: none;
+	cursor: pointer;
+}
+aside .back-top{
+	display: none;
+}
+aside .pic-top{
+	background-position: -58px -161px;
+}
+
+aside .pic-1{
+	background-position: -91px -164px;
+}
+aside .pic-2{
+	background-position: -118px -164px;
+}
+aside .pic-enter{
+	background-position:-149px -164px;
+}
+
+aside .pic-after{
+	position: absolute;
+	top: -150px;
+	right: 55px;
+	border: 1px solid #e5e5e5;
+	display: none;
+}
+/* 鼠标点击事件 */
+/* aside 绝对定位 */
+.dis{
+	position: absolute;
+	top: 910px;
+	right: 73px;
+}
+
+
+
+
+
+/* 特价机票 */
+	/* 图片加文字 */
+.sec-price{
+	height: 375px;
+	width: 1000px;
+	border: 1px solid #e5e5e5;
+	padding:20px 0px;
+}
+
+.sec-price .top{
+	width: 960px;
+	margin: 0px auto;
+	height: 140px;
+}
+
+.top li{
+	width: 225px;
+	height: 140px;
+	background: blue;
+	float: left;
+	margin-right: 20px;
+	position: relative;
+}
+.top li:nth-of-type(4){
+	margin-right: 0px;
+}
+
+.top li img{
+	width: 225px;
+	height: 140px;
+}
+
+.top li p{
+	width: 197px;
+	line-height: 30px;
+	background: rgba(28, 38, 43, 0.6);
+	position: absolute;
+	bottom: 0px;
+	color: white;
+	font-size: 15px;
+	padding: 0px 14px;
+}
+
+.top .span-left{
+	float: left;
+}
+
+.top .span-right{
+	float: right;
+}
+
+.sec-price .tab-cen{
+	width: 960px;
+	height: 40px;
+	margin: 13px auto 19px;
+	background: #f6f6f6;
+}
+/* table栏头部 */
+.sec-price .tab-cen::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.tab-cen li{
+	width: 48px;
+	line-height: 40px;
+	text-align: center;
+	margin-left: 18px;
+	float: left;
+	font-size: 14px;
+	color: #666666;
+	cursor: pointer;
+}
+/* 点击变换颜色 */
+.tab-cen .cen-col{
+	background: #ff9d00;
+	color: white;
+}
+
+.tab-cen .cen-col::after{
+	content: "";
+	display: inline-block;
+	width: 12px;
+	height: 6px;
+	position: relative;
+	top: 19px;
+	left: -10px;
+	background: url('../img/Airport.png') no-repeat -129px -36px;
+}
+
+
+/* table栏内容 */
+.sec-price .tab-bot{
+	width: 960px;
+	height: 151px;
+	margin: 0px auto;
+	/* background: red; */
+}
+.tab-bot .first{
+	display: none;
+}
+.tab-bot .fir-dis{
+	display: block;
+}
+
+.tab-bot .bot-left,
+.tab-bot .bot-cen,
+.tab-bot .bot-rig{
+	width: 319px;
+	height: 151px;
+	float: left;
+}
+
+.tab-bot .bot-cen{
+	border:1px solid #e5e5e5;
+	border-top: none;
+	border-bottom: none; 
+}
+
+.bot-left p,.bot-cen p,.bot-rig p{
+	width: 319px;
+	padding: 0px 19px 0px;
+	cursor: pointer;
+
+}
+.bot-left .span-one,
+.bot-left .span-two,
+.bot-cen .span-one,
+.bot-cen .span-two,
+.bot-rig .span-one,
+.bot-rig .span-two
+{
+	font-size: 13px;
+	color: #666666;
+	display: inline-block;
+	height: 28px;
+}
+.bot-left .span-one,
+.bot-cen .span-one,
+.bot-rig .span-one
+{
+	width: 125px;
+}
+.bot-left .span-two,
+.bot-cen .span-two,
+.bot-rig .span-two
+{
+	height: 28px;
+	margin-right: 72px;
+}
+.bot-left .span-three,
+.bot-cen .span-three,
+.bot-rig .span-three
+{
+	font-size: 16px;
+	color: #ff9d00;
+}
+
+.bot-left .p-cen,
+.bot-cen .p-cen,
+.bot-rig .p-cen
+{
+	margin: 10px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+	background: #3c3c3c;
+}
+
+.fot-top{
+	height: 355px;
+	width: 1150px;
+	margin: 90px auto 0px;
+}
+.fot-warp{
+	width: 1150px;
+	height: 231px;
+}
+
+.fot-top dl{
+	width: 182px;
+	height: 182px;
+	float: left;
+	margin:26px 67px 0px 0px ;
+}
+
+.fot-top dt{
+	font-size: 14px;
+	color: #c2c2c2;
+	line-height: 30px;
+}
+
+.fot-top dd{
+	font-size: 12px;
+	color: #c2c2c2;
+	line-height: 23px;
+}
+
+.fot-top .fot-pic{
+	text-align: center;
+	float: right;
+	margin:55px 0px 0px 40px ;
+}
+
+.fot-top dd a{
+	margin-right: 11px;
+	text-decoration: none;
+	color: #c2c2c2; 
+}
+.fot-warp dl:nth-of-type(3) dt{
+	width: 132px;
+	text-align: center;
+}
+.fot-warp dl:nth-of-type(3) a{
+	margin-right: 30px;
+}
+.fot-top dd a:hover{
+	color: white; 
+}
+
+.fot-top .fot-pic{
+	width: 94px;
+}
+.fot-top .fot-pic img{
+	margin-bottom: 9px;
+}
+.fot-top .fot-pic dd{
+	font-size: 12px;
+	line-height: 17px;
+}
+.fot-warp1{
+	width: 1150px;
+	height: 104px;
+	text-align: center;
+
+}
+.fot-warp1 .p1{
+	margin:0px 0px 16px 367px
+}
+.fot-warp1 p{
+	font-size: 16px;
+	color: #c2c2c2;
+	/* text-align: center; */
+	
+}
+
+ .fot-warp1 span{
+	width: 29px;
+	height: 27px;
+	display: inline-block;
+	background: url('../img/Airport1.png') no-repeat;
+	margin-right: 16px;
+} 
+
+.fot-warp1 .pic-1{
+	background-position: 0px 0px;
+}
+
+.fot-warp1 .pic-2{
+	background-position: -31px 0px;
+}
+
+.fot-warp1 .pic-3{
+	background-position: -60px 0px;
+}
+
+
+.fot-bot{
+	width: 1150px;
+	height: 124px;
+	border-top: 1px solid #575a5b;
+	margin: 0px auto;
+	padding-top: 11px;
+}
+
+h2::after{
+	content: "";
+	float: left;
+	height: 39px;
+	width: 136px;
+	display: inline-block;
+	background: url('../img/Airport1.png') no-repeat;
+	background-position: 0px -30px;
+	margin-right: 27px;
+}
+
+.fot-p1 a:nth-of-type(1)::after{
+	content: "";
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	background: url('../img/Airport2.png') no-repeat;
+	background-position: 0px 0px;
+	background-size: 12px 12px;
+}
+
+.fot-p2,.fot-p1{
+	float: left;
+	font-size: 12px;
+	color: #bab7c2;
+	text-align: center;
+	line-height: 22px;
+}
+p a{
+	color: #bab7c2;
+	text-decoration: none;
+	margin: 0px 1px;
+}
+.fot-p2{
+	text-align: center;
+	margin-left: 13px
+}
+.fot-p2 a,.fot-p1>a:nth-of-type(3){
+	margin-right:13px;
+}
+.col{
+	color: #ff9d00;
+}
+p a:hover{
+	color: white;
+}
+.fot-p3{
+	text-align: center;
+}
+.fot-p3 a{
+	margin-right: 14px;
+}
+
+.fot-p3 a::after{
+	content: "";
+	width: 90px;
+	height: 30px;
+	display: inline-block;
+	margin-top: 13px;
+}
+.fot-p3 a:nth-of-type(1)::after{
+	background: url('../img/Airport1.png') no-repeat;
+	background-position: 0px -109px;	
+}
+.fot-p3 a:nth-of-type(2)::after{
+	background: url('../img/A12.png') ;
+}
+.fot-p3 a:nth-of-type(3)::after{
+	background: url('../img/A13.png') ;
+}
+
+
+
+/* 文字图标 */
+/* 特价 */
+.icon {
+	width: 1em;
+	height: 1em;
+	vertical-align: -0.15em;
+	fill: currentColor;
+	overflow: hidden;
+}
+.icon_te{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 5px;
+	left: 585px;
+	z-index: 999;
+	border: none;
+}
+
+/* hot */
+.icon_hot{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 8px;
+	left: 55px;
+}
+.icon_display{
+	display: inline-block;
+}
+
+.lefta .icon_hot{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 13px;
+	left: 55px;
+}
+/* new */
+.icon-newcopy{
+	width: 30px;
+	height: 30px;
+	position: relative;
+	bottom:65px;
+	left: 90px;
+}

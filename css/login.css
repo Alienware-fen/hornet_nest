@@ -1,0 +1,256 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	background: url("../img/01.jpg") no-repeat;
+	background-size: 100% 100%;
+	height: 498px;
+	padding-top: 58px;
+}
+
+.warp,.right,.left{
+	height: 434px;
+}
+.warp{
+	width: 730px;
+	margin: 0px auto ;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.right{
+	float: right;
+	width: 290px;
+	background: url('../img/02.png');
+}
+
+.left{
+	float: left;
+	width: 440px;
+}
+/* 左边大盒子 */
+.top{
+	height: 338px;
+	background: white;
+	text-align: center;
+	display: table;
+}
+
+/* 包裹ul的盒子 */
+.warp .top-warp{
+	width: 320px;
+	margin: 0px auto;
+	padding: 0px 60px 0px;
+} 
+/* ul和li 的样式 */
+.tab-top{
+	width: 200px;
+	line-height: 21px;
+	border-bottom: 1px solid #f6f7f9;
+	margin: 40px auto 30px;
+	padding: 0px 60px 0px;
+	
+}
+.tab-top::after{
+	content: "";
+	display: block;
+	clear: both;
+	margin: 0px auto;
+
+}
+.tab-top li{
+	font-size: 17px;
+	color: #717376;
+	width: 72px;
+	line-height: 41px;
+	margin: 0px auto;
+	cursor: pointer;
+	position: relative;
+}
+.tab-top .top-left{
+	float: left;
+	position: relative;
+}
+.tab-top .top-rig{
+	float: right;
+	position: relative;
+}
+
+/* table头部点击事件样式 */
+.dis{
+	border-bottom: 5px solid #ff9d00;
+    border-radius: 5px;
+	display:block;
+}
+
+/* table 内容的盒子 */
+.top-cen .warp-p{
+	margin: 0px auto;
+}
+/* 扫码登陆内容*/
+.top-cen .warp-p{
+	display: block;
+}
+.warp-p p{
+	width: 273px;
+	line-height: 20px;
+	font-size: 12px;
+	text-align: center;
+	margin: 0px 0px 12px 85px;
+}
+.warp-p a{
+	color: #4d97ff;
+}
+.warp-p a:hover{
+	text-decoration: none;
+}
+.warp-p .top-pic{
+	background: url('../img/03.png') no-repeat;
+	display: inline-block;
+	width: 149px;
+	height: 149px;
+}
+
+ /* 密码登陆内容 */
+.warp-inp {
+	display: none;
+}
+.warp-inp .email,
+.warp-inp .pass{
+	width: 294px;
+	height: 17px;
+	background: #f6f7f9;
+	border: none;
+	border-radius: 5px;
+	font-size: 12px;
+	padding: 13px;
+	outline: none;
+}
+.warp-inp .email{
+	margin-top: 25px;
+}
+.warp-inp .pass{
+	margin: 10px 0px 10px;
+}
+.email:active,
+.pass:active{
+	border: 1px solid  #ff9500;
+}
+.email:focus,
+.pass:focus{
+	border: 1px solid  #ff9500;
+}
+
+/* 密码登陆 */
+.warp-inp a{
+	width: 170px;
+	font-size: 11px;
+	color: #717376;
+	float: right;
+	margin-bottom: 19px;
+	display: inline-block;
+}
+.warp-inp .bot{
+	width: 320px;
+	height: 43px;
+	font-size: 18px;
+	color: white;
+	background: #ff9d00;
+	text-align: center;
+	border: none;
+	line-height: 10px;
+	border-radius: 5px;
+}
+
+/* 账号不能为为空 */
+.warp-inp .acount,
+.warp-inp .pass-num,
+.warp-inp .acountnum,
+.warp-inp .emailmat{
+	color: red;
+	font-size: 12px;
+	text-align: left;
+	padding-left: 60px;
+	margin-bottom: -16px;
+	display: none;
+}
+.warp-inp .acount::before,
+.warp-inp .pass-num::before,
+.warp-inp .acountnum::before,
+.warp-inp .emailmat::before{
+	content: "";
+	display:inline-block;
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+	margin-right: 3px;
+	background: url('../img/01.png')no-repeat 0px -60px;
+}
+
+.warp-inp .view{
+	display: block;
+}
+/* 登录按钮 */
+.bot{
+	height: 96px;
+	background: #f6f7f9;
+	padding: 12px 40px;
+	outline: none;
+	cursor: pointer;
+}
+.bot p{
+	font-size: 13px;
+	color: #94969a;
+}
+/* 微博 微信  */
+.bot a{
+	border: 1px solid #ff9500;
+	width: 34px;
+	height: 34px;
+	display: inline-block;
+	background: white;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 34px;
+	margin:13px 30px 0px 0px;
+}
+
+.bot a:hover{
+	background: #ff9500;
+}
+
+.login-p{
+	width: 140px;
+	line-height: 25px;
+	background: rgba(68, 90, 103, 0.6);
+	font-size: 11px;
+	text-align: center;
+	border-radius: 22px;
+	margin: 13px 0px 7px 565px;
+}
+
+.login-p a{
+	color: #ff9500;
+}
+
+.bot-p{
+	font-size: 13px;
+}
+
+.bot-p a{
+	margin-left: 930px;
+}
+
+.bot-p a,.bot-p,.login-p,button{
+	color: white;
+}
+
+.bot-p a:hover,.login-p a:hover,.top a:hover{
+	text-decoration:underline;
+}
+
+.bot-p a,.login-p a,.bot a,.top a{
+	text-decoration: none;
+}
